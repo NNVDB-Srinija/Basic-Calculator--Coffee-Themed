@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coffee Calculator ☕</title>
+    <link rel="stylesheet" href="calc1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <h1 style="text-align:center; color:#5c3d2e; margin:10px 0;">☕ Coffee Calculator</h1>
+            <input id="display" readonly>
+            <div class="keys">
+                <button onclick="appendtoDisplay('7')">7</button>
+                <button onclick="appendtoDisplay('8')">8</button>
+                <button onclick="appendtoDisplay('9')">9</button>
+                <button onclick="appendtoDisplay('/')">/</button>
+                <button onclick="appendtoDisplay('4')">4</button>
+                <button onclick="appendtoDisplay('5')">5</button>
+                <button onclick="appendtoDisplay('6')">6</button>
+                <button onclick="appendtoDisplay('*')">*</button>
+                <button onclick="appendtoDisplay('1')">1</button>
+                <button onclick="appendtoDisplay('2')">2</button>
+                <button onclick="appendtoDisplay('3')">3</button>
+                <button onclick="appendtoDisplay('-')">-</button>
+                <button onclick="appendtoDisplay('0')">0</button>
+                <button onclick="appendtoDisplay('.')">.</button>
+                <button class="clear" onclick="cleardisplay()">C</button>
+                <button class="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
